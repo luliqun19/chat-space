@@ -1,1 +1,46 @@
-メインバー
+.MainChat
+ .MainHeader
+  .MainHeader__LeftBox
+   .MainHeader__LeftBox__CurrentGroup
+    group1
+   %ul.MainHeader__LeftBox__MemberName
+    Member :
+    %li.MainHeader__LeftBox__MemberName__name
+     masa
+  .MainHeader__RightBox__EditBtn
+   = link_to "#", class:"RightBox__EditBtn" do
+    = "Edit"
+ .MainMessages
+  .MainMessage
+   .MainMessage__upper-info
+    .MainMessage__upper-info__Messenger
+     masa
+    .MainMessage__upper-info__DateTime
+     2019/12/27(Fri) 23:15:02
+   .MainMessage__text
+    good morning
+  .MainMessage
+   .MainMessage__upper-info
+    .MainMessage__upper-info__Messenger
+     masa
+    .MainMessage__upper-info__DateTime
+     2019/12/27(Fri) 23:15:02
+   .MainMessage__text
+    good morning
+  .MainMessage
+   .MainMessage__upper-info
+    .MainMessage__upper-info__Messenger
+     masa
+    .MainMessage__upper-info__DateTime
+     2019/12/27(Fri) 23:15:02
+   .MainMessage__text
+    good morning
+
+ .MainMessageForm
+  %form.new_message
+   .input-box
+    %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+    %label{class: "input-box__image"}
+     = icon('fas', 'image')  
+     %input{type: "file", class:"input-box__image__file"}
+   %input{type: "submit", class: "submit-btn"}
