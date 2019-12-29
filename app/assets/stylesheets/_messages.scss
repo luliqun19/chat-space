@@ -2,13 +2,13 @@
   box-sizing: border-box;
 }
 
-.SideBar {
+.side-bar {
   background-color: #253141;
   width: 300px;
   float: left;
   height: 100vh;
 
- .SideHeader {
+ .side-header {
   width: 300px;
   height: 100px;
   background-color: #253141;
@@ -50,11 +50,11 @@
   }
 }
 
- .SideGroups {
+ .side-groups {
   background-color: #2f3e51;
     width: 300px;
     height: calc(100vh - 100px);
-  .SideGroup {
+  .side-group {
     width: 300px;
     height: 100px;
     padding-top: 20px;
@@ -67,7 +67,7 @@
      color: #ffffff;
      font-weight: bold;
    }
-   &__LatestMessage {
+   &__latest-message {
      font-size: 11px;
      color: #ffffff;
      font-weight: bold;
@@ -78,28 +78,28 @@
   }
 }
 
-.MainChat {
+.main-chat {
   background-color: #ffffff;
   width: calc(100vw - 300px);
   height: 100vh;
   float: left;
 
-  .MainHeader {
+  .main-header {
     width: calc(100vw - 300px);
     height: 100px;
     background-color:#ffffff;
     display: flex;
     justify-content: space-between;
-   &__LeftBox {
+   &__left-box {
      margin-left: 40px;
      width: 100px;
-    &__CurrentGroup {
+    &__current-group {
       color: #333333;
       font-size: 20px;
       padding-top: 35px;
       padding-bottom: 15px;
     }
-    &__MemberName {
+    &__member-name {
       color: #999999;
       font-size: 12px;
       display: flex;
@@ -112,7 +112,7 @@
      } 
     }
   }
-   &__RightBox__EditBtn {
+   &__right-box__edit-btn {
       margin-right: 40px;
       width: 72px;
       height: 40px;
@@ -132,24 +132,24 @@
    }  
     
   
-  .MainMessages {
+  .main-messages {
     background-color: #fafafa;
     width: calc(100vw - 300px);
     height: calc(100vh - 100px - 90px);
     border-color: #eeeeee;
-   .MainMessage {
+   .main-message {
      margin-left: 40px;
     &__upper-info {
       display: flex;
       justify-content: flex-start;
       padding-top: 35px;
       padding-bottom: 12px;
-     &__Messenger {
+     &__messenger {
        color: #333333;
        font-size: 16px;
        font-weight: bold;
      }
-     &__DateTime {
+     &__date-time {
       color: #999999;
       font-size: 12px;
       padding-left: 5px;
@@ -164,7 +164,7 @@
    } 
   }
 
-  .MainMessageForm {
+  .main-message-form {
     background-color: #d2d2d2;
     padding: 20px 40px;
     height: 90px;
