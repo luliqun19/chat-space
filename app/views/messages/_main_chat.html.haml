@@ -1,0 +1,46 @@
+.main-chat
+ .main-header
+  .main-header__left-box
+   .main-header__left-box__current-group
+    group1
+   %ul.main-header__left-box__member-name
+    Member :
+    %li.main-header__left-box__member-name__name
+     masa
+  .main-header__right-box__edit-btn
+   = link_to "#", class:"RightBox__EditBtn" do
+    = "Edit"
+ .main-messages
+  .main-message
+   .main-message__upper-info
+    .main-message__upper-info__messenger
+     masa
+    .main-message__upper-info__date-time
+     2019/12/27(Fri) 23:15:02
+   .main-message__text
+    good morning
+  .main-message
+   .main-message__upper-info
+    .main-message__upper-info__messenger
+     masa
+    .main-message__upper-info__date-time
+     2019/12/27(Fri) 23:15:02
+   .main-message__text
+    good morning
+  .main-message
+   .main-message__upper-info
+    .main-message__upper-info__messenger
+     masa
+    .main-message__upper-info__date-time
+     2019/12/27(Fri) 23:15:02
+   .main-message__text
+    good morning
+
+ .main-message-form
+  %form.new_message
+   .input-box
+    %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+    %label{class: "input-box__image"}
+     = icon('fas', 'image')  
+     %input{type: "file", class:"input-box__image__file"}
+   %input{type: "submit", class: "submit-btn"}
