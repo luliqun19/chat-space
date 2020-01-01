@@ -1,0 +1,20 @@
+.side-bar
+ .side-header
+  .side-header__items
+   %p.side-header__items__user-name
+    = current_user.name
+   %ul.side-header__items__icons
+    %li.side-header__items__icons__new-group
+     = link_to new_group_path do
+      = icon('fas', 'edit')
+    %li.side-header__items__icons__user-edit
+     = link_to edit_user_path(current_user) do
+      = icon('fas', 'cog', class: 'icon')
+ .groups
+  - current_user.groups.each do |group|
+   .group
+    = link_to '#' do
+     .group__name
+     = group.name
+     .group__message
+      no message
