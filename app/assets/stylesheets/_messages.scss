@@ -54,6 +54,7 @@
   background-color: #2f3e51;
     width: 300px;
     height: calc(100vh - 100px);
+    overflow: scroll;
   .group {
     width: 300px;
     height: 100px;
@@ -113,16 +114,15 @@
       padding-bottom: 15px;
     }
     &__member-name {
-      color: #999999;
       font-size: 12px;
-      display: flex;
-      justify-content: flex-start;
-     &__name {
        color: #999999;
-       font-size: 12px;
-       list-style: none;
        padding-left: 5px;
-     } 
+       display: flex;
+
+      &__name {
+        padding-right: 5px;
+      } 
+     
     }
   }
    &__right-box__edit-btn {
@@ -150,6 +150,8 @@
     width: calc(100vw - 300px);
     height: calc(100vh - 100px - 90px);
     border-color: #eeeeee;
+    overflow: scroll;
+
    .main-message {
      margin-left: 40px;
     &__upper-info {
@@ -173,19 +175,22 @@
       color: #434A54;
       padding-bottom: 46px;
 
+    }
+    &__image {
+      width: 200px;
+      height: 150px;
     }  
    } 
   }
 
-  .main-message-form {
+  .form {
     background-color: #d2d2d2;
     padding: 20px 40px;
     height: 90px;
 
-   form {
-     display: flex;
-     .input-box {
-       display: flex;
+    .new-message {
+      display: flex; 
+      .input-box {
        position: relative;
        width: 100%;
 
@@ -202,7 +207,12 @@
          top: 15px;
          right: 15px;
          cursor: pointer;
-         font-style: 1.3rem;
+
+         
+         &__icon {
+           font-size: 1.5rem;
+
+         }
 
          &__file {
            display: none;
