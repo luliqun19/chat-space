@@ -4,7 +4,7 @@
    .main-header__left-box__current-group
     = @group.name
    .main-header__left-box__member-name
-    メンバー:
+    Member:
     - @group.group_users.each do |group_user|
      .main-header__left-box__member-name__name
      = group_user.user.name
