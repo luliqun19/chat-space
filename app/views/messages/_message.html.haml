@@ -1,9 +1,9 @@
-.main-message
+.main-message{"data-message_id": "#{message.id}"}
  .main-message__upper-info
   .main-message__upper-info__messenger
    = message.user.name
   .main-message__upper-info__date-time
-   = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+   = message.created_at.strftime("%Y/%m/%d(%a) %H:%M:%S")
  .main-message__text
   - if message.content.present?
    %p.lower-message__content
